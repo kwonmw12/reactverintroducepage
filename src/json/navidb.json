@@ -1,0 +1,16 @@
+ 
+{ "naviDB" : 
+[{
+    "naviText" : "포트폴리오",
+    "naviLink" : "#portfolio"
+  },
+  {
+    "naviText" : "인물탐방",
+    "naviLink" : "#me"
+                  },
+  {
+    "naviText" : "사전인터뷰 및 제안",
+    "naviLink" : "#preInterview"
+                  }
+  ]
+}     

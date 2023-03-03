@@ -1,0 +1,134 @@
+*{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.083em;
+}
+li{
+    list-style: none;
+}
+.h100vh{ height: 100vh;}
+
+#root{
+    a{
+        color:black
+    }
+    a:hover{
+        color:rgb(227, 96, 73);
+    }
+
+    h1{
+        max-width:9.5rem;
+        svg{
+            height:2.8rem;
+            transform: translateY(-30%);
+            transform-origin: center;
+            transition: 0.5s;
+            #blackIcon{
+                transform: translateY(-200%);
+                transition: 0.5s;
+            }
+            #deaback{
+                transform: translateY(-200%);
+                transition: 0.5s;
+            }
+
+        }
+
+    }
+    
+
+    #hd{
+        background-color: white;
+        &.scroll{
+            background-color: rgba(0,0,0,.5);
+           
+            a{
+                color:white;
+            }
+            h1 svg{
+                transform: translateY(0);
+                g{
+                    g{ fill: white;}
+                }
+                
+                #blackIcon{
+                    transform: translateY(0);
+                }
+                #deaback{
+                    transform: translateY(0);
+                }
+
+            }
+            
+
+        }
+        #allMenu{
+            font-weight: 500;
+        }
+
+        .mobileNavi{
+            position: absolute;
+            top: calc(100% + 1px);
+            left:0;
+            right:0;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition:  max-height 0.5s ease-out;
+
+            a{
+                color:black !important
+            }
+
+            &:before,
+            &:after{
+                content: "";
+                display: block;
+                height: 1rem;
+
+            }
+
+            &.on{
+                max-height: calc(100vh - 50px); 
+                
+            }
+
+        }
+        
+    }
+    .workSection{
+        .swiper-wrapper{
+             .swiper-slide{
+                min-height: calc(100vh - 120px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+             }
+             .react{
+                background:url(https://img.cjthemarket.com/images/file/display/586/20221122103138241.jpg?RS=1920x500) no-repeat center;
+                background-size: cover;
+                color:white;
+                @media (max-width:768px) {
+                    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+                    
+                }
+             }
+             .boot{
+
+             }
+        }
+        .swiper-scrollbar-horizontal{
+            height: 2px;
+            bottom:0;
+            left:0;
+            right:0;
+            width:100%;
+        }
+    }
+
+    .section{
+        height: calc(100vh - 120px);
+        min-height:800px;
+    }
+}
